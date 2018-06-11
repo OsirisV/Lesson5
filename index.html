@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Practice</title>
+        <title>JavaScript Practice</title>
 </head>
 <body>
-
-<h1>This is a Heading</h1>
-<a href="http://www.skysports.com/football/fixtures">Click here to get updates about current football games</a>
-<img src="iris.jpg" alt="W3Schools.com" width="102" height="142">
-<button>Click me</button>
-<p>This is a paragraph.</p>
-
+         <script>
+	var s1 = "Jason Berry";
+	var s2 = " is my professor.";
+	document.write("1) ParseInt:<br>To convert a string to a value, we use the parseDatatype format.<br>For example, 182.123456 to an integer(mathematically considered a whole number), <br>is simply: " + parseInt(182.123456));
+	document.write("<br><br>2) Concat:<br>We can also join to string using the .concat() method. <br>If we want to join a given s1:(Jason berry) and s2:(is my professor.) <br>we simple do s1.concat(s2), which will ouput: " + s1.concat(s2));
+	document.write("<br><br>3) Replace:<br> We can return a new string within a string using objectname.replace(what to replace, <br>with what to replace). Replacing (my) with (a) in the second sentece gives us: " + s2.replace("my", "a"));
+	function detectSpam(input) {
+	input = input.toLowerCase();
+	return input.indexOf("fake");
+	}
+	var mystring = prompt("Enter a string");
+	alert(detectSpam(mystring));
+        </script>
 </body>
 </html>
